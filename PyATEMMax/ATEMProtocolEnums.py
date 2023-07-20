@@ -459,6 +459,8 @@ class ATEMMultiViewers(ATEMConstantList):
 
     multiViewer1 = ATEMConstant('multiViewer1', 0)
     multiViewer2 = ATEMConstant('multiViewer2', 1)
+    multiViewer3 = ATEMConstant('multiViewer3', 0)
+    multiViewer4 = ATEMConstant('multiViewer4', 1)
 
 
 class ATEMWindows(ATEMConstantList):
@@ -474,6 +476,12 @@ class ATEMWindows(ATEMConstantList):
     window8 = ATEMConstant('window8', 7)
     window9 = ATEMConstant('window9', 8)
     window10 = ATEMConstant('window10', 9)
+    window11 = ATEMConstant('window11', 10)
+    window12 = ATEMConstant('window12', 11)
+    window13 = ATEMConstant('window13', 12)
+    window14 = ATEMConstant('window14', 13)
+    window15 = ATEMConstant('window15', 14)
+    window16 = ATEMConstant('window16', 15)
 
 
 class ATEMKeyers(ATEMConstantList):
