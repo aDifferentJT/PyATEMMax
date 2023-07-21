@@ -193,6 +193,8 @@ This is the complete list of settings stored in the `ATEMMax` object:
 * `switcher.inputProperties[videoSource].longName`
 * `switcher.inputProperties[videoSource].mEAvailability.mE1FillSources`
 * `switcher.inputProperties[videoSource].mEAvailability.mE2FillSources`
+* `switcher.inputProperties[videoSource].mEAvailability.mE3FillSources`
+* `switcher.inputProperties[videoSource].mEAvailability.mE4FillSources`
 * `switcher.inputProperties[videoSource].portType`
 * `switcher.inputProperties[videoSource].shortName`
 
