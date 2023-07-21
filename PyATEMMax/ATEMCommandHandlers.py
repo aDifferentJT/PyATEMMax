@@ -273,6 +273,8 @@ class ATEMCommandHandlers():
 
         self._d.inputProperties[videoSource].mEAvailability.mE1FillSources = self._inBuf.getU8Flag(35, 0)
         self._d.inputProperties[videoSource].mEAvailability.mE2FillSources = self._inBuf.getU8Flag(35, 1)
+        self._d.inputProperties[videoSource].mEAvailability.mE3FillSources = self._inBuf.getU8Flag(35, 2)
+        self._d.inputProperties[videoSource].mEAvailability.mE4FillSources = self._inBuf.getU8Flag(35, 3)
 
 
     def _handleMvPr(self) -> None:
