@@ -35,6 +35,8 @@ class InputProperties():
         def __init__(self): # InputProperties.MEAvailability
             self.mE1FillSources: bool = False
             self.mE2FillSources: bool = False
+            self.mE3FillSources: bool = False
+            self.mE4FillSources: bool = False
 
 
     def __init__(self): # InputProperties
