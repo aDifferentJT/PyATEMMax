@@ -164,6 +164,7 @@ class ATEMProtocol:
         "Time": 'Last State Change Time Code',
         'InCm': 'Initialization Complete',
         'Capt': 'Capture Still',
+        'CSTL': 'Clear Still',
 
         # These commands are not really unknown,
         #   but they are not implemented
