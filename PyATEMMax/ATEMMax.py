@@ -205,3 +205,14 @@ class ATEMMax(ATEMConnectionManager, ATEMSwitcherState, ATEMSetterMethods):
 
         self.switcher._prepareCommandPacket("Capt", 0)
         self.switcher._finishCommandPacket()
+
+
+    def execClearStill(self, still: Union[ATEMConstant, int]) -> None:
+        """Execute: Clear Still"""
+
+        if not self.connected:
+            self.log.warning("execClearStill() - switcher disconnected")
+
+        self.switcher._prepareCommandPacket("CSTL", 4)
+        self.switcher._outBuf.setU8(0, still)
+        self.switcher._finishCommandPacket()
