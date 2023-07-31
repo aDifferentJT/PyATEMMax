@@ -91,8 +91,7 @@ class ATEMMax(ATEMConnectionManager, ATEMSwitcherState, ATEMSetterMethods):
         """
 
         if not self.connected:
-            self.log.warning("execCutME() IGNORED - switcher disconnected")
-            return
+            self.log.warning("execCutME() - switcher disconnected")
 
         mE_val = self.atem.mixEffects[mE].value
 
@@ -109,8 +108,7 @@ class ATEMMax(ATEMConnectionManager, ATEMSwitcherState, ATEMSetterMethods):
         """
 
         if not self.connected:
-            self.log.warning("execAutoME() IGNORED - switcher disconnected")
-            return
+            self.log.warning("execAutoME() - switcher disconnected")
 
         mE_val = self.atem.mixEffects[mE].value
 
@@ -127,8 +125,7 @@ class ATEMMax(ATEMConnectionManager, ATEMSwitcherState, ATEMSetterMethods):
         """
 
         if not self.connected:
-            self.log.warning("execDownstreamKeyerAutoKeyer() IGNORED - switcher disconnected")
-            return
+            self.log.warning("execDownstreamKeyerAutoKeyer() - switcher disconnected")
 
         dsk_val = self.atem.dsks[dsk].value
 
@@ -145,8 +142,7 @@ class ATEMMax(ATEMConnectionManager, ATEMSwitcherState, ATEMSetterMethods):
         """
 
         if not self.connected:
-            self.log.warning("execFadeToBlackME() IGNORED - switcher disconnected")
-            return
+            self.log.warning("execFadeToBlackME() - switcher disconnected")
 
         mE_val = self.atem.mixEffects[mE].value
 
@@ -164,8 +160,7 @@ class ATEMMax(ATEMConnectionManager, ATEMSwitcherState, ATEMSetterMethods):
         """
 
         if not self.connected:
-            self.log.warning("execMacroRecord() IGNORED - switcher disconnected")
-            return
+            self.log.warning("execMacroRecord() - switcher disconnected")
 
         name_len = len(name)
         description_len = len(description)
@@ -193,8 +188,7 @@ class ATEMMax(ATEMConnectionManager, ATEMSwitcherState, ATEMSetterMethods):
         """Execute: Macro Stop Recording"""
 
         if not self.connected:
-            self.log.warning("execMacroRecord() IGNORED - switcher disconnected")
-            return
+            self.log.warning("execMacroRecord() - switcher disconnected")
 
         self.switcher._prepareCommandPacket("MAct", 4)
         self.switcher._outBuf.setU8(0, 0xff)
@@ -207,8 +201,7 @@ class ATEMMax(ATEMConnectionManager, ATEMSwitcherState, ATEMSetterMethods):
         """Execute: Capture Still"""
 
         if not self.connected:
-            self.log.warning("execCaptureStill() IGNORED - switcher disconnected")
-            return
+            self.log.warning("execCaptureStill() - switcher disconnected")
 
         self.switcher._prepareCommandPacket("Capt", 0)
         self.switcher._finishCommandPacket()
