@@ -201,3 +201,14 @@ class ATEMMax(ATEMConnectionManager, ATEMSwitcherState, ATEMSetterMethods):
         self.switcher._outBuf.setU8(1, 0xff)
         self.switcher._outBuf.setU8(2, 0x02)
         self.switcher._finishCommandPacket()
+
+
+    def execCaptureStill(self) -> None:
+        """Execute: Capture Still"""
+
+        if not self.connected:
+            self.log.warning("execCaptureStill() IGNORED - switcher disconnected")
+            return
+
+        self.switcher._prepareCommandPacket("Capt", 0)
+        self.switcher._finishCommandPacket()
