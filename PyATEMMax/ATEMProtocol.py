@@ -163,6 +163,7 @@ class ATEMProtocol:
         "TlSr": 'Tally By Source',
         "Time": 'Last State Change Time Code',
         'InCm': 'Initialization Complete',
+        'Capt': 'Capture Still',
 
         # These commands are not really unknown,
         #   but they are not implemented
